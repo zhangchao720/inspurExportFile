@@ -1,0 +1,37 @@
+<idea-plugin>
+    <id>com.inspur.inspurExportFile</id>
+    <name>文件导出(大厅开发组)</name>
+    <version>1.0</version>
+    <vendor>张超</vendor>
+
+    <!-- 描述插件名称 -->
+    <description><![CDATA[
+      文件导出<br>
+      <em> 政务服务产品部大厅项目组,IDEA开发工具导出插件,可以导出java/class/html/xml等系列文件。</em>
+    ]]></description>
+
+    <!-- 更新记录写在这里 -->
+    <change-notes><![CDATA[
+        <ul>
+            <li>新增: 增加导出后自动打开导出根目录的功能</li>
+            <li>计划: 增加可选一键导出jar/zip/rar格式的文件，可供直接发布给项目上使用</li>
+        </ul>
+    ]]>
+    </change-notes>
+
+    <idea-version since-build="173.0"/>
+
+    <!-- 证件扩展 -->
+    <extensions defaultExtensionNs="com.intellij">
+
+    </extensions>
+
+    <!-- 添加action -->
+    <actions>
+        <action id="com.inspur.inspurExportFile" class="InspurExportFileAction" text="文件导出" icon="AllIcons.ToolbarDecorator.Export">
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="before" relative-to-action="FindUsages" />
+            <add-to-group group-id="MainToolBar" anchor="before" relative-to-action="FindUsages"/>
+        </action>
+    </actions>
+
+</idea-plugin>
