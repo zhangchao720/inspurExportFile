@@ -2,7 +2,7 @@
     <id>com.inspur.inspurExportFile</id>
     <name>文件导出(大厅开发组)</name>
     <version>1.0</version>
-    <vendor>张超</vendor>
+    <vendor email="1042390288@qq.com" url="https://github.com/zhangchao720/inspurExportFile">张超</vendor>
 
     <!-- 描述插件名称 -->
     <description><![CDATA[
